@@ -1,0 +1,72 @@
+# geovani-
+Teste 
+#(1)teste 
+
+def fibonacci_sequence(n):
+    fib_seq = [0, 1]
+    
+    while fib_seq[-1] < n:
+        fib_seq.append(fib_seq[-1] + fib_seq[-2])
+    
+    return fib_seq
+
+def is_fibonacci(num):
+    fib_seq = fibonacci_sequence(num)
+    
+    if num in fib_seq:
+        return f"O número {num} pertence à sequência de Fibonacci."
+    else:
+        return f"O número {num} não pertence à sequência de Fibonacci."
+
+
+        #(2)teste 
+
+        def verificar_letra_a(string):
+    string_lower = string.lower()
+    
+    contador = string_lower.count('a')
+    
+    if contador > 0:
+        return f"A letra 'a' aparece {contador} vez(es) na string."
+    else:
+        return "A letra 'a' não aparece na string."
+
+
+        #(3) teste 
+
+Inicialmente: K = 1, SOMA = 0.
+K = 2, SOMA = SOMA + 2 = 0 + 2 = 2.
+K = 3, SOMA = SOMA + 3 = 2 + 3 = 5.
+K = 4, SOMA = SOMA + 4 = 5 + 4 = 9.
+K = 5, SOMA = SOMA + 5 = 9 + 5 = 14.
+K = 6, SOMA = SOMA + 6 = 14 + 6 = 20.
+K = 7, SOMA = SOMA + 7 = 20 + 7 = 27.
+K = 8, SOMA = SOMA + 8 = 27 + 8 = 35.
+K = 9, SOMA = SOMA + 9 = 35 + 9 = 44.
+K = 10, SOMA = SOMA + 10 = 44 + 10 = 54.
+K = 11, SOMA = SOMA + 11 = 54 + 11 = 65.
+K = 12, agora K não é mais menor que INDICE (12), então o loop para.
+Ao final do processamento, o valor da variável SOMA será 65.
+
+#(4) teste 
+
+a) 9
+b) 128
+c) 49
+d) 100
+e) 13
+f) 20
+
+
+
+#(5) teste 
+
+
+
+Inicialmente iria ligar o primeiro interruputor e deixar aceso por um tempo aproximamdamete (20 min por exemplo) apos isso iria apagar o primeiro interrupitor.
+Deixaria ligado segundo interruptor 
+e não mexeria no terceiro interruptor 
+
+Na sala das lampadas iria ver qual lampada estava acesa determinando ela com o segundo interrupitor 
+A lampada que estaria quente iria determinar-la para o primeiro interruptor, pois ficou ligada mais tempo
+E a ultima lampada apagada seria deterrminada para o terceiro interrupitor pois nao foi ligado.
